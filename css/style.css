@@ -87,7 +87,7 @@ nav li a{
 .wsp{
     /* padding-left: 93%;    */
     position: fixed;
-    top: 86%;
+    top: 78%;
     width: 52px;
     height: 52px;
     border-radius: 50%;
@@ -150,3 +150,56 @@ nav li a{
 .explorar:hover {
     background-color: #71e821;
 }
+
+        /* footer */
+        #footer{
+            width: 100%;
+            display: flex;
+            color: white;
+            background-color: #233000;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .x,.y{
+            width: 25%;
+        }
+        .art-footer{
+            text-align: justify;
+            padding: 40px;
+            
+        }
+        .txt-footer{
+            padding-top: 36px;
+            text-align: center;
+            font-size: 40px;
+        }
+        .z{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inputfooter::placeholder{
+            color: #ffffff;
+        }
+        /* Permite dar hover al placeholder*/
+        .inputfoot:hover::placeholder {
+            color: #050505;
+        }
+        .inputfooter:hover{
+            background-color: #ffffff;
+            color: #050505;
+            cursor: pointer;
+        }
+
+        .inputfooter{
+            color: white;
+            background-color: #233000;
+            border-radius: .1rem;
+            border: 1px solid white;
+            width: 260px;
+            height: 38px;
+            padding-left: 15px;
+            font-size: 12px;
+            
+        }
