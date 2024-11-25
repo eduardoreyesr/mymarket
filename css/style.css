@@ -46,7 +46,7 @@ section{
     top: 0;
     left: 0;
     /* z-index: 100; */
-    background-color: #fbfefd;
+    background-color: #fff;
 }
     /*Menu con logo*/
 nav{
@@ -80,7 +80,7 @@ nav li a{
     }
     
     .active-link {
-            color: #9CAA00;
+            color: #7b8600;
         }
 
 /*WhatsApp*/
