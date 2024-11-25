@@ -40,49 +40,95 @@ section{
 
 
  /*Fijar menu*/
- .l-header {
+ /* .l-header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    /* z-index: 100; */
+    z-index: 100;
     background-color: #fff;
-}
+} */
     /*Menu con logo*/
-nav{
-    /* position: fixed; */
-    z-index: 99;
+    nav{
+        background-color: #fff;
+    position: fixed;
+    z-index: 100;
     width: 100%;
     /* height: 2.5rem;  */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center;     */
     }
+    nav .wrapper{
+        position: relative;
+        max-width: 1300px;
+        padding: 0px 30px;
+        height: 56px;
+        line-height: 70px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
 
-nav li{
+        .wrapper .nav-links{
+            display: inline-flex;
+            }
+            .nav-links li{
+            list-style: none;
+            }
+
+    /* nav li{
         display: inline;
         font-family: tahoma;
-        font-size: 11pt;
-    }
+        font-size: 1rem;
+        list-style: none;
+    } */
 
-nav li a{
+    .nav-links li a{
         padding: 10px 15px 10px 15px;
         text-decoration: none;
         color: #262626;
+        
+        transition: all 0.3s ease;
         }
    
-    nav a:hover{
+    .nav-links li a:hover{
         color: #fefefe;
         background-color: #9CAA00;
         text-decoration: none;
        
     }
     
-    .active-link {
+    .nav-links .active-link {
             color: #7b8600;
         }
 
+        .nav-links li:hover .drop-menu{
+        transition: all 0.3s ease;
+        opacity: 1;
+        visibility: visible;
+        padding-left: 0px;
+        }
+
+        .nav-links .drop-menu{
+            position: absolute;
+            background: #fff;
+            /* width: 180px; */
+            line-height: 45px;
+            top: 42px;
+            opacity: 0;
+            visibility: hidden;
+            /* box-shadow: 0 6px 10px rgba(0,0,0,0.15); */
+            
+        }
+        .drop-menu li a{
+            /* width: 100%; */
+            display: block;
+            padding: 0 25px 0 25px;
+            font-weight: 400;
+             /* border-radius: 0px; */
+            }
 /*WhatsApp*/
 .wsp{
     /* padding-left: 93%;    */
@@ -138,6 +184,95 @@ nav li a{
    margin-bottom: 2rem;
 }
 /* Boton */
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .btn-3 {  background: #4d9c18;
+background: linear-gradient(0deg, #4d9c18 0%, #aab626 100%);
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+   background: #ffffff;
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover{
+   background: transparent;
+  box-shadow: none;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:hover{
+   color: #ffffff;
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+   background: #ffffff;
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}
+
+  
 .explorar{
     display: inline-block;
     background-color: #4d9c18;
@@ -150,6 +285,7 @@ nav li a{
 .explorar:hover {
     background-color: #71e821;
 }
+
 
         /* footer */
         #footer{
