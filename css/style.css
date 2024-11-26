@@ -183,7 +183,7 @@ section{
    color: #fff;
    margin-bottom: 2rem;
 }
-/* Boton */
+/* Boton contacto*/
 .custom-btn {
     width: 130px;
     height: 40px;
@@ -272,15 +272,74 @@ background: linear-gradient(0deg, #4d9c18 0%, #aab626 100%);
   width: 100%;
 }
 
-  
+/* Button Styles */
+
+.button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #54cd04;
+  margin: 20px 20px 20px 20px;
+  color: #54cd04;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .9em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+a {
+  color: #54cd04;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+/* Second Button */
+
+#button-2 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#button-2 a {
+  position: relative;
+  transition: all .35s ease-Out;
+}
+
+#slide {
+  width: 100%;
+  height: 100%;
+  left: -200px;
+  background: #54cd04;
+  position: absolute;
+  transition: all .35s ease-Out;
+  bottom: 0;
+}
+
+#button-2:hover #slide {
+  left: 0;
+}
+
+#button-2:hover a {
+  color: #fff;
+}
+
+/*Botón general*/ 
 .explorar{
-    display: inline-block;
+    /* display: inline-block; */
     background-color: #4d9c18;
     color: #fff;
-    padding: .64rem 1rem;
-    border-radius: .1rem;
+    height: 45px;
+    width: 130px;
+    /* border-radius: .1rem; */
     transition: .3s;
-    text-decoration: none;
+    /* text-decoration: none; */
+    cursor: pointer;
+    font-size: 1.1rem;
+    overflow: hidden;
 }
 .explorar:hover {
     background-color: #71e821;
