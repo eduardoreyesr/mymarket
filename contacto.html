@@ -165,83 +165,85 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <form>
+                        <form action="https://formsubmit.co/eduardoreyesr@outlook.com" method="post"> 
                             <div class="row g-3">
                                 <div class="col-md-6">
                                 
                                         <label for="nombres" class="form-label">Nombres</label>
-                                        <input type="text" class="form-control" id="nombres" name="nombres" required>
+                                        <input type="text" class="form-control border border-secondary" id="nombres" name="nombres" required>
+                                 
                                   
                                 </div>
                                 <div class="col-md-6">
                                   
                                         <label for="apellidos" class="form-label">Apellidos</label>
-                                        <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+                                        <input type="text" class="form-control border border-secondary" id="apellidos" name="apellidos" required>
                                   
                                 </div>
                                 <div class="col-md-6">
                                    
                                         <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" required>
+                                        <input type="email" class="form-control border border-secondary" id="email" name="email" required>
                                   
                                 </div>
                                 <div class="col-md-6">
                                    
                                     <label for="celular" class="form-label">Celular</label>
-                                    <input type="tel" class="form-control" id="celular" name="celular" required>                              
+                                    <input type="tel" class="form-control border border-secondary" id="celular" name="celular" required>                              
                                 </div>
                                 <div class="col-md-6">
                                    
                                     <label for="asunto" class="form-label">Asunto</label>
-                                    <select class="form-control"  name="asunto" id="asunto">
+                                    <select class="form-control border border-secondary"  name="asunto" id="asunto">
                                         <option selected disabled>Seleccionar Asunto</option>
-                                        <option id="1">Web Sites</option>
-                                        <option id="2">Sofware a Medida</option>
-                                        <option id="3">Control de Asistencia</option>
-                                        <option id="4">Control de Inventario</option>
-                                        <option id="5">Computadoras</option>
-                                        <option id="6">Laptops</option>
-                                        <option id="7">PDA's</option>
-                                        <option id="8">Impresoras</option>
-                                        <option id="9">Sillas de Escritorio</option>
-                                        <option id="10">Escritorios</option>
-                                        <option id="11">Soporte de PC's</option>
-                                        <option id="12">Soporte de TI</option>                                  
+                                        <option value="wst">Web Sites</option>
+                                        <option value="sme">Sofware a Medida</option>
+                                        <option value="cas">Control de Asistencia</option>
+                                        <option value="cin">Control de Inventario</option>
+                                        <option value="pcs">Computadoras</option>
+                                        <option value="ltp">Laptops</option>
+                                        <option value="pda">PDA's</option>
+                                        <option value="prt">Impresoras</option>
+                                        <option value="sil">Sillas de Escritorio</option>
+                                        <option value="esc">Escritorios</option>
+                                        <option value="spc">Soporte de PC's</option>
+                                        <option value="sti">Soporte de TI</option>                                  
                                         
                                     </select>                              
                                 </div>
                                 <div class="col-md-6">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
+                                    <input class="form-check-input border border-secondary" type="checkbox" value="" name="sireunion" id="sireunion" >
+                                    <label class="form-check-label" for="reunion">
                                       Solicitar Reunión
                                     </label>
-                                    <select class="form-control"  name="asunto" id="asunto">
+                                    <select class="form-control border border-secondary"  name="reunion" id="reunion">
                                         <option selected disabled>Seleccionar Aplicación</option>
-                                        <option id="1">Zoom</option>
-                                        <option id="2">Google Meet</option>
-                                        <option id="3">Microsoft Teams</option>
-                                        <option id="4">WhatsApp</option>                              
+                                        <option value="zom">Zoom</option>
+                                        <option value="met">Google Meet</option>
+                                        <option value="mte">Microsoft Teams</option>
+                                        <option value="wsp">WhatsApp</option>                              
                                         
                                     </select> 
                                   </div>
                                   <div class="col-md-6">
                                    
                                     <label for="fecha" class="form-label">Fecha</label>
-                                    <input type="date" class="form-control" id="fecha" name="fecha"  value="2024-12-04" min="2024-12-04">
+                                    <input type="date" class="form-control border border-secondary" id="fecha" name="fecha"  value="2024-12-04" min="2024-12-04">
                               
                                 </div>
                                 <div class="col-md-6">
                                 
                                     <label for="hora" class="form-label">Hora</label>
-                                    <input type="time" class="form-control" id="hora" name="hora" value="08:00:00" min="08:00:00">                              
+                                    <input type="time" class="form-control border border-secondary" id="hora" name="hora" value="08:00:00" min="08:00:00">                              
                                 </div>
                                 <div class="col-md-12">
                                    
                                     <label for="mensaje" class="form-label">Mensaje</label>
-                                    <textarea class="form-control" id="mensaje" name="mensaje" cols="30" rows="5" required placeholder="Dejanos tu mensaje"></textarea>
+                                    <textarea class="form-control border border-secondary" id="mensaje" name="mensaje" cols="30" rows="5" required placeholder="Dejanos tu mensaje"></textarea>
                                 </div>
                                 <div>
-                                    <button class="btn text-green btn-outline-success px-3 btn-lg" type="submit">Enviar Mensaje</button>
+                                    <!-- <button class="btn  btn-outline-primary px-3 btn-lg" type="submit">Enviar Mensaje</button> -->
+                                    <button class="button-blue" type="submit">Enviar Mensaje</button>
                                 </div>
                             </div>
                         </form>
@@ -249,7 +251,7 @@
                   
                     <br><br><br>
                     <div id="map" class="contact-map col-lg-5 mb-4">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0418589868814!2d-76.94183682517372!3d-12.10928698813244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c74227a8ba31%3A0xa276985b9fba987c!2sAv.%20los%20Fresnos%201708%2C%20La%20Molina%2015024!5e0!3m2!1ses!2spe!4v1733192492505!5m2!1ses!2spe" width="400" height="510" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0418589868814!2d-76.94183682517372!3d-12.10928698813244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c74227a8ba31%3A0xa276985b9fba987c!2sAv.%20los%20Fresnos%201708%2C%20La%20Molina%2015024!5e0!3m2!1ses!2spe!4v1733192492505!5m2!1ses!2spe" width="500" height="510" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
 
                 </div>

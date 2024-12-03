@@ -585,3 +585,48 @@ background: linear-gradient(0deg, #4d9c18 0%, #aab626 100%);
  text-decoration: none;
  color: #fefefe;
 }
+
+/*Button Blue*/
+/* From Uiverse.io by yaasiinaxmed */ 
+.button-blue {
+  --color: #0077ff;
+  font-family: inherit;
+  display: inline-block;
+  width: 10em;
+  height: 2.6em;
+  line-height: 1.2em;
+  overflow: hidden;
+  cursor: pointer;
+  /* margin: 20px; */
+  font-size: 17px;
+  z-index: 1;
+  color: var(--color);
+  border: 2px solid var(--color);
+  border-radius: 6px;
+  position: relative;
+}
+
+.button-blue::before {
+  position: absolute;
+  content: "";
+  background: var(--color);
+  width: 380px;
+  height: 100px;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.button-blue:hover {
+  color: white;
+}
+
+.button-blue:before {
+  top: 100%;
+  left: 100%;
+  transition: 0.3s all;
+}
+
+.button-blue:hover::before {
+  top: -30px;
+  left: -30px;
+}
