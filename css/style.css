@@ -578,7 +578,7 @@ background: linear-gradient(0deg, #4d9c18 0%, #aab626 100%);
 /*Footer Bootstrap*/
 .bg-footer{
   background-color: #000000;
-  padding: 50px 0px 30px;
+  padding: 40px 0px 30px;
 }
 
 .bg-footer a{
